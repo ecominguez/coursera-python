@@ -1,1 +1,2 @@
-print "Just to show that I have everything installed and running"
+#just a script to show what the print says...
+print "Just to show that I have everything installed and running."
