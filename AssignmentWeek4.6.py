@@ -5,12 +5,16 @@
 # (the pay should be 498.75). You should use raw_input to read a string and float() to convert the string to a number.
 # Do not worry about error checking the user input unless you want to - you can assume the user types numbers properly.
 
-hrs = raw_input("Enter Hours:")
-rph = float(raw_input("Enter rate per hour:"))
-h = float(hrs)
-if h>40:
-    pay = 40 *rph
-    pay += (h-40)* (rph*1.5)
-else:
-    pay = h*rph
-print "Should pay {}".format(pay)
+def computepay(hrs,rph):
+    h = float(hrs)
+    if h>40:
+        pay = 40 *rph
+        pay += (h-40)* (rph*1.5)
+    else:
+        pay = h*rph
+    return pay
+
+
+hours = raw_input("Enter Hours:")
+ratePerHour = float(raw_input("Enter rate per hour:"))
+print "Should pay {}".format(computepay(hours,ratePerHour))
