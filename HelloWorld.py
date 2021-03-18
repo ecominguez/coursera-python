@@ -1,17 +1,18 @@
-def myFunction(a,b):
-    print "El resutlado de ",a,"x 2 es:",b
-test = -1
-while test<1 or test>10 :
-    test = int(raw_input("Enter an integer (1-10:"))
-try:
-   test = int(test)
-except:  
-   print "Invalid entry."
-   quit()  
-result = test * 2
+def my_function(a,b):
+    print('El resutlado de ',a,'x 2 es:',b)
+aNumber = -1
+while aNumber<1 or aNumber>10 :
+    try:
+        aNumber = int(input("Enter an integer (1-10):"))
+        if (aNumber <0 or aNumber > 10):
+            print ('No estaríamos entendiendo... el valor ',aNumber,' es incorrecto. Tiene que ser entre 1 y 10.')
+    except ValueError as vE:
+        print('Sonamos!!! valor incorrecto:',aNumber,'. Tiene que ser entero entre 1 y 10.')
+        quit 
+result = aNumber * 2
 x=1
-while x <=test:
-    myFunction(test,result)
-    print "X:",x
+while x <=aNumber:
+    my_function(aNumber,result)
+    print("X:",x)
     x += 1
 
