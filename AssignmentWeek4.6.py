@@ -15,6 +15,6 @@ def computepay(hrs,rph):
     return pay
 
 
-hours = raw_input("Enter Hours:")
-ratePerHour = float(raw_input("Enter rate per hour:"))
-print "Should pay {}".format(computepay(hours,ratePerHour))
+hours = input("Enter Hours:")
+ratePerHour = float(input("Enter rate per hour:"))
+print("Should pay {}".format(computepay(hours,ratePerHour)))

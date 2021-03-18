@@ -12,9 +12,10 @@ def addtwo(a,b):
     added = a + b
     return added
 
-print greet('en'),'Glenn'
-print greet('es'),'Sally'
-print greet('fr'),'Michael'
+#utilizando las funciones definidas mas arriba
+print(greet('en'),'Glenn')
+print(greet('es'),'Sally')
+print(greet('fr'),'Michael')
 x=addtwo(3,5)
-print 'x:',x
+print('x:',x)
 

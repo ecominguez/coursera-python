@@ -7,11 +7,11 @@ cursor.execute(query)
 
 for (cName, state) in cursor:
     if state == "CA":
-        print "Universidad {} del la soleada California".format(cName)
+        print("Universidad {} del la soleada California".format(cName))
     else:
-        print "Universidad {} del  estado de {}".format(cName, state)
+        print("Universidad {} del  estado de {}".format(cName, state))
 
-print "Movies -----------------------"
+print("Movies -----------------------")
 
 query = ("select mId,title,rID,stars,name from Movie join Rating using(mId) join Reviewer using(rID) order by mId")
 cursor.execute(query)
@@ -27,12 +27,12 @@ while keepGoing:
             JCR=True
     else:
         if not JCR:
-            print "Pelicula {} sin puntaje por Cameron".format(movieId[1])
+            print("Pelicula {} sin puntaje por Cameron".format(movieId[1]))
         movieId=row
         JCR=row[4]=="James Cameron"
     row=cursor.fetchone()
     keepGoing= row is not None
 if not JCR:
-    print "Pelicula {} sin puntaje por Cameron".format(movieId[1])
+    print("Pelicula {} sin puntaje por Cameron".format(movieId[1]))
 
 cnx.close()

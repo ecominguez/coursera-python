@@ -5,12 +5,12 @@
  # and float() to convert the string to a number. Do not worry about error checking
  # the user input - assume the user types numbers properly.
 
-hrs = raw_input("Enter Hours:")
-rph = float(raw_input("Enter rate per hour:"))
+hrs = input("Enter Hours:")
+rph = float(input("Enter rate per hour:"))
 h = float(hrs)
 if h>40:
     pay = 40 *rph
     pay += (h-40)* (rph*1.5)
 else:
     pay = h*rph
-print "Should pay {}".format(pay)
+print("Should pay {}".format(pay))
