@@ -1,6 +1,12 @@
 import mysql.connector
 
-cnx = mysql.connector.connect(user='admin', password='admin1', host='192.168.0.185', database='College')
+print("************************antes")
+try:
+    cnx = mysql.connector.connect(user='admin', password='admin1', host='192.168.0.185', database='College')
+except SystemExit as e:
+    print(e)
+    raise
+print("************************despues")
 cursor = cnx.cursor()
 query = ("select cName,state from College")
 cursor.execute(query)
