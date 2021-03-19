@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 from random import randint
 #Step 1: Connect to MongoDB - Note: Change connection string as needed
-client = MongoClient("mongodb+srv://spock:viruta64@cluster0.ccwcb.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+client = MongoClient("mongodb+srv://spock:password@cluster0.ccwcb.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 db=client.business
 #Step 2: Create sample data
 names = ['Kitchen','Animal','State', 'Tastey', 'Big','City','Fish', 'Pizza','Goat', 'Salty','Sandwich','Lazy', 'Fun']

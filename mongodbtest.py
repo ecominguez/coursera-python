@@ -1,8 +1,9 @@
 from pymongo import MongoClient
+
 # pprint library is used to make the output look more pretty
 from pprint import pprint
 # connect to MongoDB, change the << MONGODB URL >> to reflect your own connection string
-client = MongoClient("mongodb+srv://spock:viruta64@cluster0.ccwcb.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+client = MongoClient("mongodb+srv://spock:password@cluster0.ccwcb.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 
 db = client.test
 
