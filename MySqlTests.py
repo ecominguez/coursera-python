@@ -26,7 +26,7 @@ row = cursor.fetchone()
 movieId=row
 JCR=False
 while keepGoing:
-    # print "1- Id: {} Pelicula: {} Rating:{} Reviewer: {} {}".format(row[0],row[1],row[3],row[2],row[4])
+    # Esto esta comenado a propósito print "1- Id: {} Pelicula: {} Rating:{} Reviewer: {} {}".format(row[0],row[1],row[3],row[2],row[4])
 
     if (movieId[0]==row[0]):
         if (row[4]=="James Cameron"):
